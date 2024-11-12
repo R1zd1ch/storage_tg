@@ -22,7 +22,7 @@ export default async function Home() {
 	return (
 		<div className="flex flex-col items-center mt-10">
 			<h1>{user?.name}</h1>
-			<h1 className="truncate max-w-[300px]">{user?.image}</h1>
+			<h1 className="truncate ">{user?.image}</h1>
 			<h1>{user?.id}</h1>
 			<h1>{user?.createdAt.getTime()}</h1>
 		</div>
