@@ -6,10 +6,10 @@ export const prisma = new PrismaClient();
 export async function createUserOrUpdate(user: TelegramUserData) {
 	return prisma.user.upsert({
 		where: {
-			id: user.id,
+			id: user.id.toString(),
 		},
 		create: {
-			id: user.id,
+			id: user.id.toString(),
 			name: user.first_name,
 			image: user.photo_url,
 		},
