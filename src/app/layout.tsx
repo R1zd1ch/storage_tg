@@ -1,5 +1,5 @@
-import ThemeProvider from "@/components/theme/theme-provider";
-import Nav from "@/components/navigation/nav";
+import ThemeProvider from "@/src/components/theme/theme-provider";
+import Nav from "@/src/components/navigation/nav";
 
 import "./globals.css";
 import type { Metadata } from "next";

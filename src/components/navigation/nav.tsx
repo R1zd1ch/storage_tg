@@ -1,5 +1,5 @@
-import { Separator } from "@/components/ui/separator";
-import ThemeToggle from "@/components/theme/theme-select";
+import { Separator } from "@/src/components/ui/separator";
+import ThemeToggle from "@/src/components/theme/theme-select";
 import SignInButton from "./auth-buttons";
 
 import Link from "next/link";

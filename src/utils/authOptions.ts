@@ -1,7 +1,6 @@
-import { createUserOrUpdate } from "@/lib/prisma";
+import { createUserOrUpdate } from "@/src/lib/prisma";
 import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-
 import { objectToAuthDataMap, AuthDataValidator } from "@telegram-auth/server";
 
 declare module "next-auth" {
@@ -62,6 +61,3 @@ export const authOptions: NextAuthOptions = {
 		error: "/auth/error",
 	},
 };
-
-const handler = NextAuth(authOptions);
-export { handler as GET, handler as POST };

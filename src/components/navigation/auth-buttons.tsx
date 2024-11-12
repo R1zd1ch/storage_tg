@@ -7,10 +7,14 @@ import {
 	DropdownMenuLabel,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/src/components/ui/dropdown-menu";
 import { LoginButton } from "@telegram-auth/react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import {
+	Avatar,
+	AvatarFallback,
+	AvatarImage,
+} from "@/src/components/ui/avatar";
+import { Button } from "@/src/components/ui/button";
 import { ReloadIcon, ExitIcon } from "@radix-ui/react-icons";
 
 import { useSession, signIn, signOut } from "next-auth/react";
