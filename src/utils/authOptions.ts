@@ -6,7 +6,7 @@ import { objectToAuthDataMap, AuthDataValidator } from "@telegram-auth/server";
 declare module "next-auth" {
 	interface Session {
 		user: {
-			id: string;
+			id: number;
 			name: string;
 			image: string;
 			email: string;
@@ -52,7 +52,7 @@ export const authOptions: NextAuthOptions = {
 	],
 	callbacks: {
 		async session({ session, token }) {
-			session.user.id = session.user.email as string;
+			session.user.id = session.user.email as any;
 			session.user.image = token.image as string;
 			return session;
 		},
